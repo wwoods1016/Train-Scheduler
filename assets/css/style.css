@@ -6,13 +6,18 @@ body, label, h3 {
 
 /* Jumbotron */
 .jumbotron {
-    background-color: #999;
-    color: #000;
-    text-align: center;
+    display: flex;
+    background-image: url(../images/trainyard.jpg);
+    color: #fff;
+    align-items: center;
+    height: 400px;
+    justify-content: center;
 }
 
 h1 {
+    max-width: 95%;
     font-size: 4em;
+
 }
 
 /* Tables */

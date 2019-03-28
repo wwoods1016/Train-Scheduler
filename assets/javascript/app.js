@@ -24,6 +24,11 @@ $(document).ready(function () {
         frequency = $("#frequency").val().trim();
         // console.log(trainName);
 
+        // Clears form after submitting
+        $("#train-name").val("");
+        $("#destination").val("");
+        $("#first-train").val("");
+        $("#frequency").val("");
         // Pushing to databse
         database.ref().push({
             trainName: trainName,
@@ -34,6 +39,8 @@ $(document).ready(function () {
         });   
         
         return false;     
+
+
     });
 
 
